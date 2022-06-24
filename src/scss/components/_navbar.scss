@@ -1,0 +1,181 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand-container {
+        .brand {
+            img {
+                // original
+                // height: 100%;
+                // original
+
+                height: 3rem;
+                width: 3rem;
+
+            }
+        }
+
+        .toggle-container {
+            display: none;
+
+            // 2a - toggle light / dark mode
+            .dark {
+                color: black;
+            }
+
+            .light {
+                color: yellow;
+            }
+            // 2a - toggle light / dark mode
+
+        }
+    }
+
+    .links-container {
+        .links {
+            list-style-type: none;
+            display: flex;
+            gap: 4rem;
+
+            li {
+
+                // 2a - toggle light / dark mode
+                .dark {
+                    color: black;
+                }
+
+                .light {
+                    color: yellow;
+                }
+                // 2a - toggle light / dark mode
+
+                a {
+                    color: var(--accent-color-1);
+                    text-decoration: none;
+                }
+
+                &:last-of-type {
+                    a {
+                        color: var(--pink);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:280px) and (max-width: 1080px) {
+        position: relative;
+        padding: 1rem 2rem;
+
+        .brand-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .brand {
+                img {
+                    height: 1.5rem;
+                }
+            }
+
+            .toggle-container {
+                display: block;
+                color: var(--accent-color-1);
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 1rem;
+                z-index: 40;
+
+                .toggle {
+                    z-index: 40;
+                    display: block;
+                }
+            }
+        }
+
+
+        .links-container {
+            position: absolute;
+            top: 0;
+            
+            // 5a -- slide out menu bar - which side to you want the menu to come from Left or Right
+            left: 0;
+            // right: 0;
+            // 5a -- slide out menu bar - which side to you want the menu to come from Left or Right
+            
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 0;
+            transition: 0.5s ease-in-out;
+            z-index: 30;
+
+            // 6a -- slide out menu bar - background color Solid or Gradient
+            // background-color: var(--red);
+            background-image:     
+                linear-gradient(
+                    rgba(255,255,255,0),
+                    rgba(255,255,255,0)
+                ), 
+                linear-gradient(
+                    101deg,
+                    var(--pink),
+                    var(--orange)
+                )
+            ;
+            // 6a -- slide out menu bar - background color
+
+            .links {
+                flex-direction: column;
+
+                li {
+                    a {
+                        color: var(--background);
+                    }
+
+                    &:last-of-type {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+
+        .nav-visible {
+            width: 60vw;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        // padding: 0;
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
+    }
+
+}
+
+// 2a - toggle light / dark mode
+[data-theme="light"] {
+    nav {
+        .brand-container {
+            .brand {
+                img {
+                    /* 
+                    change navBar icon left image color when theme changes
+                    had to remove this because image turns black
+                    you have to use a transparent image for = 0
+                    */
+                    // filter: brightness(0);
+                    filter: brightness(1);
+                }
+            }
+        }
+    }
+}
+// 2a - toggle light / dark mode
