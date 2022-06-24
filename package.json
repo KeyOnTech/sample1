@@ -1,6 +1,7 @@
 {
+  "homepage": "https://keyontech.github.io/websample1/index.html",
   "name": "nft-2",
-  "version": "0.1.0",
+  "version": "1.0.6242022",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
