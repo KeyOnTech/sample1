@@ -1,2 +1,2 @@
-# sample1
-nft landing page site sample 1
+# Sample Web page
+NFT landing page sample site 1
