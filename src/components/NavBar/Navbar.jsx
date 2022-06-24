@@ -48,16 +48,16 @@ export default function Navbar({ changeTheme, currentTheme }) {
 			}`}>
 				<ul className="links">
 					<li>
-						<a href="#">Features</a>
+						<a href="/">Features</a>
 					</li>
 					<li>
-						<a href="#">About</a>
+						<a href="/">About</a>
 					</li>
 					<li>
-						<a href="#">Launch</a>
+						<a href="/">Launch</a>
 					</li>
 					<li>
-						<a href="#">Sign Up</a>
+						<a href="/">Sign Up</a>
 					</li>
 
 					{/* // 2a - toggle light / dark mode */}

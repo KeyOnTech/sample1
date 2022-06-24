@@ -16,7 +16,7 @@ export default function Release() {
 						We have released four limited edition NFT's early which can be bid
 						on via 
 						&nbsp;
-						<a href="#">Open Sea.</a>
+						<a href="/">Open Sea.</a>
 					</p>
 					<p className="description">
 						There will only be four of these NFTs made, be sure not to miss out!
@@ -24,7 +24,7 @@ export default function Release() {
 					<p className="description">
 						50% of proceeds go to charity.
 					</p>
-					<a href="#" className="link">
+					<a href="/" className="link">
 						Check them out
 						<BsArrowRight />
 					</a>
@@ -54,7 +54,7 @@ export default function Release() {
 						We have released four limited edition NFT's early which can be bid
 						on via 
 						&nbsp;
-						<a href="#">Open Sea.</a>
+						<a href="/">Open Sea.</a>
 					</p>
 					<p className="description">
 						There will only be four of these NFTs made, be sure not to miss out!
@@ -62,7 +62,7 @@ export default function Release() {
 					<p className="description">
 						50% of proceeds go to charity.
 					</p>
-					<a href="#" className="link">
+					<a href="/" className="link">
 						Check them out
 						<BsArrowRight />
 					</a>
