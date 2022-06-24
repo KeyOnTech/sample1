@@ -60,6 +60,17 @@ export default function App() {
 
   return (
     <div className="app-container" data-theme={theme} >
+
+
+{/* 
+# Github pages steps
+https://www.youtube.com/watch?v=2hM5viLMJpA
+
+# Starter Base
+https://www.youtube.com/watch?v=up60it73iqU&t=5251s 
+*/}
+
+
       <ScrollToTop /> 
       <NavBar changeTheme={changeTheme} currentTheme={theme} />
       <Home />
