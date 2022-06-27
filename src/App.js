@@ -61,10 +61,11 @@ export default function App() {
   return (
     <div className="app-container" data-theme={theme} >
 
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
+      <BrowserRouter basename="/websample1">
         <Routes>
           
-          {/* <Route path="/" element={<Layout />}> */}
+          {/* <Route path="/websample1" element={<Layout />}> */}
           <Route path="/" element={<Layout changeTheme={changeTheme} theme={theme} />}>
           {/* <Route path="/" element={<Home changeTheme={changeTheme} theme={theme} />}> */}
 
