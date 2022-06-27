@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/websample1/static/css/main.0cff7172.css",
-    "main.js": "/websample1/static/js/main.98a1a475.js",
+    "main.css": "/websample1/static/css/main.f1523315.css",
+    "main.js": "/websample1/static/js/main.de861ffe.js",
     "static/media/nft-2.png": "/websample1/static/media/nft-2.29abf281c99e8a63549e.png",
     "index.html": "/websample1/index.html",
-    "main.0cff7172.css.map": "/websample1/static/css/main.0cff7172.css.map",
-    "main.98a1a475.js.map": "/websample1/static/js/main.98a1a475.js.map"
+    "main.f1523315.css.map": "/websample1/static/css/main.f1523315.css.map",
+    "main.de861ffe.js.map": "/websample1/static/js/main.de861ffe.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cff7172.css",
-    "static/js/main.98a1a475.js"
+    "static/css/main.f1523315.css",
+    "static/js/main.de861ffe.js"
   ]
 }
