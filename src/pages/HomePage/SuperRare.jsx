@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import super1 from "../../assets/nft-2.png";
 import super2 from "../../assets/ic_kot_1_round.png";
 import super3 from "../../assets/nft-2.png";
 import super4 from "../../assets/ic_kot_1_round.png";
-import Card from "../Card/Card";
+import Card from "../../components/Card/Card";
 
 export default function SuperRare() {
 	const data = [
@@ -49,9 +50,9 @@ export default function SuperRare() {
 				<p className="description">
 					We have released four limited edition NFT's that can be bid on via
 					&nbsp;
-					<a href="/">
+					<Link to="#">
 						OpenSea
-					</a>
+					</Link>
 				</p>
 			</div>
 			<div className="cards">

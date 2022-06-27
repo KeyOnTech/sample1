@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { ImSun } from "react-icons/im";
@@ -15,7 +16,9 @@ export default function Navbar({ changeTheme, currentTheme }) {
 
 			<div className="brand-container">
 				<div className="brand">
-					<img src={logo} alt="logo" />
+					<Link to="/">
+						<img src={logo} alt="logo" />
+					</Link>
 				</div>
 				<div className="toggle-container">
 					<div className="toggle">
@@ -48,16 +51,19 @@ export default function Navbar({ changeTheme, currentTheme }) {
 			}`}>
 				<ul className="links">
 					<li>
-						<a href="/">Features</a>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<a href="/">About</a>
+						<Link to="nft1">Features</Link>
 					</li>
 					<li>
-						<a href="/">Launch</a>
+						<Link to="nft2">About</Link>
 					</li>
 					<li>
-						<a href="/">Sign Up</a>
+						<Link to="nft1">Launch</Link>
+					</li>
+					<li>
+						<Link to="nft2">Sign Up</Link>
 					</li>
 
 					{/* // 2a - toggle light / dark mode */}
@@ -74,6 +80,9 @@ export default function Navbar({ changeTheme, currentTheme }) {
 					{/* // 2a - toggle light / dark mode */}
 				</ul>
 			</div>
+
+
+			{/* <Outlet /> */}
 
 		</nav>
 	);

@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import release1 from "../../assets/nft-2.png";
 import release2 from "../../assets/nft-2.png";
-import Card from "../Card/Card";
+import Card from "../../components/Card/Card";
 
 export default function Release() {
 	return (
@@ -16,7 +17,7 @@ export default function Release() {
 						We have released four limited edition NFT's early which can be bid
 						on via 
 						&nbsp;
-						<a href="/">Open Sea.</a>
+						<Link to="#">Open Sea.</Link>
 					</p>
 					<p className="description">
 						There will only be four of these NFTs made, be sure not to miss out!
@@ -24,10 +25,10 @@ export default function Release() {
 					<p className="description">
 						50% of proceeds go to charity.
 					</p>
-					<a href="/" className="link">
+					<Link to="#" className="link">
 						Check them out
 						<BsArrowRight />
-					</a>
+					</Link>
 				</div>
 				<div className="image">
 					<img src={release1} alt="release" />
@@ -54,7 +55,7 @@ export default function Release() {
 						We have released four limited edition NFT's early which can be bid
 						on via 
 						&nbsp;
-						<a href="/">Open Sea.</a>
+						<Link to="#">Open Sea.</Link>
 					</p>
 					<p className="description">
 						There will only be four of these NFTs made, be sure not to miss out!
@@ -62,10 +63,10 @@ export default function Release() {
 					<p className="description">
 						50% of proceeds go to charity.
 					</p>
-					<a href="/" className="link">
+					<Link to="#" className="link">
 						Check them out
 						<BsArrowRight />
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>

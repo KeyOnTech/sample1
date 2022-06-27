@@ -1,7 +1,7 @@
 import React from 'react'
 import home from "../../assets/nft-2.png";
 
-export default function Home() {
+export default function TopSection() {
   return (
     <div className="home">
       <div className="container">

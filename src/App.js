@@ -1,48 +1,48 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-// 8a -- scroll reveal --- cool but not really needed
-import scrollreveal from 'scrollreveal';
-// 8a -- scroll reveal --- cool but not really needed
+// // 8a -- scroll reveal --- cool but not really needed
+// import scrollreveal from 'scrollreveal';
+// // 8a -- scroll reveal --- cool but not really needed
 
 
-import ScrollToTop from './components/HomePage/ScrollToTop';
-import NavBar from './components/NavBar/Navbar';
-import Home from './components/HomePage/Home';
-import Free from './components/HomePage/Free';
-import Clients from './components/HomePage/Clients';
-import SuperRare from './components/HomePage/SuperRare';
-import Release from './components/HomePage/Release';
-import Like from './components/HomePage/Like';
-import SignUp from './components/HomePage/SignUp';
-import Footer from './components/HomePage/Footer';
+import Layout from './pages/Layout/Layout';
+import Home from './pages/HomePage/Home';
+
+import NoPage from './pages/404Page/404-page';
+
+import NFTPage1 from "./pages/NFTPage1/nft-page-1";
+import NFTPage2 from "./pages/NFTPage2/nft-page-2";
+
 
 import "./scss/index.scss";
 
 export default function App() {
 
 
-  // 8a -- scroll reveal --- cool but not really needed
-  useEffect(() => {
-    const registerAnimations = () => {
-      const sr = scrollreveal ({
-          origin: "bottom",
-          distance: "80px",
-          duration: 2000,
-          reset: false,
-      });
-      sr.reveal (`nav,.home,.free,.clients,.super-rare,.release,.like,.signup,footer`, { interval: 500 } );
-    };
-    registerAnimations();
-  }, []);
+  // // 8a -- scroll reveal --- cool but not really needed
+  // useEffect(() => {
+  //   const registerAnimations = () => {
+  //     const sr = scrollreveal ({
+  //         origin: "bottom",
+  //         distance: "80px",
+  //         duration: 2000,
+  //         reset: false,
+  //     });
+  //     sr.reveal (`nav,.home,.free,.clients,.super-rare,.release,.like,.signup,footer`, { interval: 500 } );
+  //   };
+  //   registerAnimations();
+  // }, []);
 
-  window.setTimeout(() => {
-    const home = document.getElementsByClassName("home");
-    home[0].getElementsByClassName.transform = "none";
-    const nav = document.getElementsByTagName("nav");
-    nav[0].style.transform = "none";
-  }, 500);
-  // 8a -- scroll reveal --- cool but not really needed
+  // window.setTimeout(() => {
+  //   const home = document.getElementsByClassName("home");
+  //   home[0].getElementsByClassName.transform = "none";
+  //   const nav = document.getElementsByTagName("nav");
+  //   nav[0].style.transform = "none";
+  // }, 500);
+  // // 8a -- scroll reveal --- cool but not really needed
 
 
 
@@ -61,26 +61,31 @@ export default function App() {
   return (
     <div className="app-container" data-theme={theme} >
 
+      <BrowserRouter>
+        <Routes>
+          
+          {/* <Route path="/" element={<Layout />}> */}
+          <Route path="/" element={<Layout changeTheme={changeTheme} theme={theme} />}>
+          {/* <Route path="/" element={<Home changeTheme={changeTheme} theme={theme} />}> */}
 
-{/* 
-# Github pages steps
-https://www.youtube.com/watch?v=2hM5viLMJpA
+              <Route index element={<Home changeTheme={changeTheme} theme={theme} />} />
+              <Route path="nft1" element={<NFTPage1 />} />
+              <Route path="nft2" element={<NFTPage2 />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
 
-# Starter Base
-https://www.youtube.com/watch?v=up60it73iqU&t=5251s 
-*/}
-
-
-      <ScrollToTop /> 
-      <NavBar changeTheme={changeTheme} currentTheme={theme} />
-      <Home />
-      <Free />
-      <Clients />
-      <SuperRare />
-      <Release />
-      <Like />
-      <SignUp />
-      <Footer />
     </div>
   );
 }
+
+
+
+// {/* 
+// # Github pages steps
+// https://www.youtube.com/watch?v=2hM5viLMJpA
+
+// # Starter Base
+// https://www.youtube.com/watch?v=up60it73iqU&t=5251s 
+// */}

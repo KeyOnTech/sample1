@@ -4,7 +4,7 @@ import super1 from "../../assets/nft-2.png";
 import release2 from "../../assets/nft-2.png";
 // import super1 from "../../assets/kot2_48x48.png";
 // import release2 from "../../assets/kot2_48x48.png";
-import Card from "../Card/Card";
+import Card from "../../components/Card/Card";
 
 export default function Free() {
 	return (
