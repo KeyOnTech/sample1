@@ -10,14 +10,14 @@ import SignUp from "./SignUp";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="home">
 			<TopSection />
 
 			<Free />
-			<Clients />
+			{/* <Clients /> */}
 			<SuperRare />
 			<Release />
-			<Like />
+			{/* <Like /> */}
 			<SignUp />
 		</div>
 	);

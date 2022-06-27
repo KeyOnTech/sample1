@@ -3,7 +3,7 @@ import home from "../../assets/nft-2.png";
 
 export default function TopSection() {
   return (
-    <div className="home">
+    <div>
       <div className="container">
         <div className="content">
           <p className="sub-title">
